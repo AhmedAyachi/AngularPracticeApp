@@ -1,0 +1,12 @@
+
+
+<div class="face-snap-card">
+    <h1>{{facesnap.title}}</h1>
+    <p>{{facesnap.description}}</p>
+    <p *ngIf="facesnap.location">{{facesnap.location}}</p>
+    <img alt="img" [src]="facesnap.image"/>
+    <button (click)="onAddSnap()">{{btnLabel}}</button>
+    <span
+        [ngStyle]="{color:'rgb(0,'+25*snapcount+',0)'}"
+    >{{snapcount}}</span>
+</div>
